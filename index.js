@@ -7,7 +7,7 @@ function driversWithRevenueOver(drivers, revenue) {
 function driverNamesWithRevenueOver(drivers, revenue) {
   const result = drivers.filter(driver => {
     const driverNames = [];
-    while (driver.revenue > revenue) {
+    for (driver.revenue > revenue) {
       driverNames.push(driver.name);
     }
     return driverNames;
